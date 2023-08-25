@@ -1,0 +1,27 @@
+.more-project-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $primary-font;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999999999999999;
+
+  &__card {
+    max-width: 55rem;
+    background-color: $TERTIARY_COLOR;
+    @include nav-glassy;
+    @include transition-mixin;
+    color: $white-color;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    &-one {
+      background-color: $SECONDARY_COLOR;
+    }
+  }
+}

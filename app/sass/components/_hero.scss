@@ -1,0 +1,39 @@
+.hero-section-container {
+  font-family: $primary-font;
+  color: $white-color;
+  height: 100vh;
+  padding-top: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 154%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  .btn-hero {
+    padding: 0.9rem 1rem;
+    @include transition-mixin;
+    font-weight: 500;
+
+    &:hover {
+      background-color: lighten(#080C13, 2);
+    }
+  }
+  .btn-hero-download {
+    background-color: $TERTIARY-COLOR;
+    padding: 0.9rem 1rem;
+    @include transition-mixin;
+    font-weight: 500;
+
+    &:hover {
+      background-color: lighten($SECONDARY_COLOR, 2);
+    }
+  }
+}

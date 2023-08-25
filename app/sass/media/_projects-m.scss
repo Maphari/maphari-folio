@@ -1,0 +1,32 @@
+@media screen and (width <= 600px) {
+  .img-prg {
+    display: none !important;
+  }
+  .project-nav {
+    display: none;
+  }
+  .padding-div {
+    padding-top: 6rem;
+  }
+
+  // more projects
+  .more-project-nav {
+    padding: 1rem 0;
+    // &__card {
+    //   border-radius: 0 !important;
+    // }
+  }
+}
+@media screen and (width <= 900px) {
+  .project-nav {
+    display: none;
+  }
+}
+@media screen and (width <= 750px) {
+  .more-project-container {
+    padding: 1.5rem;
+  }
+  .prj-space {
+    display: none;
+  }
+}

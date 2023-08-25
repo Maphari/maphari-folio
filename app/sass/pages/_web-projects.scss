@@ -1,0 +1,19 @@
+.web-project-container {
+  font-family: $primary-font;
+  color: $white-color;
+
+  &__header {
+    &-head {
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+  }
+}
+.journey {
+  font-family: $primary-font;
+
+  p {
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+}

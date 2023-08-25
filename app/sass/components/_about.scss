@@ -1,0 +1,21 @@
+.about-container {
+  font-family: $primary-font;
+  color: $white-color;
+
+  h1 {
+    font-weight: 500;
+    margin: 0.1rem 0;
+    font-size: 2.5rem;
+  }
+
+  .p {
+    opacity: 0.5;
+    max-width: 45rem;
+    margin: 1rem auto;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    font-weight: 300;
+    text-align: center;
+  }
+}

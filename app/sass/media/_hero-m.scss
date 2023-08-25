@@ -1,0 +1,24 @@
+@media screen and (width <= 600px) {
+  .h1-hero {
+    font-size: 6vw !important;
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 50px !important;
+
+    .btn-hero,
+    .one {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+// @media screen and (width <= 980px) and (height <= 600px) {
+//   .hero-section-container {
+//     padding: 1.5rem;
+//   }
+// }

@@ -1,0 +1,23 @@
+.project-inner {
+  max-width: 25rem;
+  font-family: $primary-font;
+
+  &__top {
+    background-color: $TERTIARY-COLOR;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cat-prj {
+    background-color: $PRIMARY_COLOR;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+.prj-more {
+  background-color: $TERTIARY-COLOR;
+  padding: 0.6rem 1rem;
+  font-weight: 400;
+}

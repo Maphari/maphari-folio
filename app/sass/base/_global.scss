@@ -1,0 +1,45 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: $PRIMARY_COLOR;
+  scroll-behavior: smooth;
+}
+
+.btn-send {
+  background-color: $TERTIARY-COLOR;
+  @include transition-mixin;
+  &:hover {
+    background-color: darken($TERTIARY-COLOR, 2);
+  }
+}
+.send-input-email,
+.send-input-message {
+  background-color: $SECONDARY_COLOR;
+}
+
+
+.footer {
+  font-family: $primary-font;
+}
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+/* Set the background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: $PRIMARY_COLOR;
+}
+
+/* Set the color and rounded corners of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: $SECONDARY_COLOR;
+}
+
+/* Set the color and rounded corners of the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $SECONDARY_COLOR;
+}

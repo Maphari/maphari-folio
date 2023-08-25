@@ -1,0 +1,24 @@
+// BASE
+@import "./base/_tailwindcss.scss";
+@import "./base/_variables.scss";
+// MIXINS
+@import "./mixins/transition-mixin";
+@import "./mixins/nav-styles";
+// GLOBAL
+@import "./base/global"; 
+// COMPONENTS
+@import "./components/navigation";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/projects";
+@import "./components/education";
+// PAGES
+@import "./pages/more-projects";
+@import "./pages/web-projects";
+// MEDIA QUERY
+@import "./media/nav-m";
+@import "./media/hero-m";
+@import "./media/about-m";
+@import "./media/projects-m";
+@import "./media/_web-project-m.scss";
+
