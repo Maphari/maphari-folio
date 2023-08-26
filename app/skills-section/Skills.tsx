@@ -134,14 +134,7 @@ export const Skills: React.FC = () => {
         >
           NodeJS | ExpressJS
         </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Spring Boot
-        </motion.div>
+    
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
           initial={{ opacity: 0, x: -30 }}
@@ -158,14 +151,7 @@ export const Skills: React.FC = () => {
         >
           Mongoose
         </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          UI UX Designer
-        </motion.div>
+
       </motion.section>
     </motion.section>
   );
