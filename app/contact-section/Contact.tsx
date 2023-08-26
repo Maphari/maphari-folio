@@ -1,9 +1,4 @@
-import {
-  React,
-  motion,
-  useState,
-  RiMailSendLine,
-} from "@/app/imports/Imports";
+import { React, motion, useState, RiMailSendLine } from "@/app/imports/Imports";
 import { toast } from "react-toastify";
 import axios from "axios";
 
@@ -99,20 +94,27 @@ export const Contact: React.FC = () => {
       messageValidorErrorHandler();
       subjectValidorErrorHandler();
 
-      const res = await axios.post("/api/send-email", {
-        email,
-        subject,
-        message,
+      const res = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email, message, subject }),
       });
-      const { data } = res;
+      
+      if (!res.ok) {
+        return errorTaost(`Request failed with status: ${res.status}`);
+      }
+    
+      const data = await res.json();
 
-      if (data?.messageID && !messageError && !subjectError && !emailError) {
+      if(data?.messageID && !messageError && !subjectError && !emailError) {
         successToast(data.message);
       } else {
-        errorTaost(data.error);
+        errorTaost(data.error)
       }
     } catch (error) {
-      errorTaost("Internal Server error");
+      errorTaost("Internal Server error😭😭");
     }
   };
 
