@@ -63,12 +63,6 @@ export const UIUXProjects: React.FC = () => {
               <span>Check Figma Design</span>
             </motion.div>
           </Link>
-          <Link href="#">
-            <motion.div className="cat-prj rounded-xl text-[10px] flex items-center gap-1">
-              <FiMoreVertical />
-              <span>Read More</span>
-            </motion.div>
-          </Link>
         </ProjectCardMore>
         <ProjectCardMore
           ImageURL={UIUX_RENTAL_SHOWCASE.src}
@@ -82,12 +76,6 @@ export const UIUXProjects: React.FC = () => {
             <motion.div className="cat-prj rounded-xl text-[10px] flex items-center gap-2">
               <BiLogoFigma />
               <span>Check Figma Design</span>
-            </motion.div>
-          </Link>
-          <Link href="#">
-            <motion.div className="cat-prj rounded-xl text-[10px] flex items-center gap-1">
-              <FiMoreVertical />
-              <span>Read More</span>
             </motion.div>
           </Link>
         </ProjectCardMore>
