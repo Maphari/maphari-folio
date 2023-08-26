@@ -1,4 +1,4 @@
-import express, { Router, Request, Response } from "express";
+import express, { Router, Request, Response, NextFunction } from "express";
 import nodemailer from "nodemailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 import dotenv from "dotenv";
@@ -32,7 +32,7 @@ transpoter.verify((err, succsess) => {
   else successMessage = succsess;
 });
 
-route.post("/api/send-email", async (request: Request, response: Response) => {
+route.post("/api/send-email", async (request: Request, response: Response, next:NextFunction) => {
   const { email, subject, message } = request.body;
 
   const mailOptions: IMailOptions = {
@@ -62,6 +62,8 @@ route.post("/api/send-email", async (request: Request, response: Response) => {
   } catch (error) {
     response.status(500).json({ error: "Internal server error!😭😭" });
   }
+
+  next()
 });
 
 export default route;

@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev && email dev",
+    "dev": "nodemon ./app/server/src/index.ts",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-    
+    "start": "NODE_ENV=production nodemon ./app/server/src/index.ts"
   },
   "dependencies": {
     "@react-email/button": "0.0.10",
