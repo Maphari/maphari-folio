@@ -1,4 +1,4 @@
-import { React, Link } from "./imports/Imports";
+import { React, Link } from "../imports/Imports";
 
 interface INavLinkProps {
   title: string;

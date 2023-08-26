@@ -1,4 +1,4 @@
-import { React } from "@/app/components/imports/Imports";
+import { React } from "@/app/imports/Imports";
 
 interface IWrapper {
   children: React.ReactNode;

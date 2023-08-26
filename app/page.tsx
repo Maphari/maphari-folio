@@ -8,7 +8,7 @@ import {
   Education,
   Contact,
   Footer,
-} from "./components/imports/Imports";
+} from "./imports/Imports";
 import { ContentSeparator } from "@/app/components/ContentSeparator";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";

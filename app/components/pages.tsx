@@ -1,4 +1,4 @@
-import { React, MoreProjects } from "@/app/components/imports/Imports";
+import { React, MoreProjects } from "@/app/imports/Imports";
 
 export const Pages: React.FC = () => {
   return <MoreProjects />;

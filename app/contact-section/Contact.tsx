@@ -3,7 +3,7 @@ import {
   motion,
   useState,
   RiMailSendLine,
-} from "@/app/components/imports/Imports";
+} from "@/app/imports/Imports";
 import { toast } from "react-toastify";
 import axios from "axios";
 

@@ -4,7 +4,7 @@ import {
   useState,
   useEffect,
   NavLink,
-} from "@/app/components/imports/Imports";
+} from "@/app/imports/Imports";
 
 export const Navigation: React.FC = () => {
   const [isSectionFocus, setIsSectionFocus] = useState<string>("");

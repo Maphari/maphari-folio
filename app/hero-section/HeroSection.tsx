@@ -9,7 +9,7 @@ import {
   BsGithub,
   MdEmail,
   Link,
-} from "@/app/components/imports/Imports";
+} from "@/app/imports/Imports";
 interface ITransition {
   ease?: string;
   type?: string;

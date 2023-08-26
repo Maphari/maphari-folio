@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import RootLayout from "../../layout";
+import RootLayout from "../layout";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -31,13 +31,13 @@ import { FiMoreVertical } from "react-icons/fi";
 
 import { motion, useScroll, scroll } from "framer-motion";
 import { Navigation } from "../navigation-section/Navigation";
-import { NavLink } from "../NavLink";
+import { NavLink } from "../components/NavLink";
 import { HeroSection } from "../hero-section/HeroSection";
 import { About } from "../about-section/About";
 import { Projects } from "../projects-section/Projects";
 import MoreProjects from "../more-projects/page";
-import { ProjectCard } from "../ProjectCard";
-import { ProjectCardMore } from "../ProjectCardMore";
+import { ProjectCard } from "../components/ProjectCard";
+import { ProjectCardMore } from "../components/ProjectCardMore";
 import { Skills } from "../skills-section/Skills";
 import { Education } from "../education-section/Education";
 import { Contact } from "../contact-section/Contact";

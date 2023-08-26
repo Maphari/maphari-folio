@@ -7,7 +7,7 @@ import {
   BiRightArrowAlt,
   Link,
   useRouter,
-} from "@/app/components/imports/Imports";
+} from "@/app/imports/Imports";
 
 interface ITransition {
   ease?: string;

@@ -1,4 +1,4 @@
-import { React, Link, motion, Image } from "./imports/Imports";
+import { React, Link, motion, Image } from "../imports/Imports";
 
 interface INavLinkProps {
   ImageURL: string;

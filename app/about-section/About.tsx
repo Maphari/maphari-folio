@@ -1,4 +1,4 @@
-import { React, motion } from "@/app/components/imports/Imports";
+import { React, motion } from "@/app/imports/Imports";
 
 interface ITransition {
   ease?: string;

@@ -1,13 +1,21 @@
 import dotenv from "dotenv";
 import express, { Express } from "express";
-import sendEmail from "./routes/sendEmail"
+import sendEmail from "./routes/sendEmail";
+import next from "next";
 
-const app: Express = express();
-
+const server: Express = express();
 dotenv.config();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-app.use(sendEmail)
-
-app.listen(process.env.PORT);
+const dev = process.env.NODE_ENV !== "production";
+const app = next({ dev });
+const handle = app.getRequestHandler();
+app.prepare().then(() => {
+  const server = express();
+  server.use(express.json());
+  server.use(express.urlencoded({ extended: true }));
+  server.use(sendEmail);
+  server.get("*", (req, res) => {
+    return handle(req, res);
+  });
+  server.listen(process.env.PORT);
+});
