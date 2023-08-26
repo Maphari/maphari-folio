@@ -17,13 +17,13 @@ interface ITransition {
 }
 
 export const DesktopProjects: React.FC = () => {
-  const transition :ITransition = {
+  const transition: ITransition = {
     ease: "backInOut",
     type: "spring",
     stiffness: 100,
     duration: 3,
-    delay: 0.8
-  }
+    delay: 0.8,
+  };
 
   return (
     <main className="web-project-container">
@@ -60,14 +60,13 @@ export const DesktopProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            When I embarked on my desktop development journey, it was back in
-            the day. Now, in 2023, I still find myself a novice in the realm of
-            desktop development using C# and WPF. The journey began with a keen
-            interest and an eager heart, diving into the world of coding and
-            graphical interfaces. Little did I know then that this path would
-            lead me to where I stand today, continuously learning and growing in
-            the art of crafting functional and visually appealing desktop
-            applications.
+            When I started my desktop development journey, it was a while ago.
+            Now, in 2023, I&apos;m still a beginner in the world of desktop
+            development using C# and WPF. It all began with a strong interest
+            and a lot of enthusiasm, jumping into the world of coding and
+            graphical interfaces. Back then, I didn&apos;t realize that this path
+            would bring me to where I am today – always learning and getting
+            better at making practical and good-looking desktop applications.
           </motion.p>
 
           <motion.p
@@ -76,15 +75,14 @@ export const DesktopProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            When I first delved into desktop development, the
-            yearning to comprehend the intricacies of C# and WPF gripped me.
-            Fast forward to the present, 2023, and I&apos;m humbly embracing my
-            status as a beginner in this domain. The initial steps were like
-            learning the rhythms of a new dance – understanding the syntax,
-            comprehending XAML&apos;s power, and gradually building the
-            confidence to design graphical user interfaces. As the sun sets on
-            each coding day, I am reminded that this journey is a marathon, not
-            a sprint, and each line of code contributes to my evolution.
+            When I jumped into desktop development, the desire to understand C#
+            and WPF really grabbed me. Now, in 2023, I&apos;m humbly accepting
+            my beginner status in this field. Starting out was like learning the
+            steps of a new dance – getting the hang of the syntax, getting the
+            power of XAML, and slowly gaining the courage to create visual
+            interfaces. At the end of each day of coding, I remember that this
+            journey is a long one, not a quick race, and every line of code
+            helps me grow.
           </motion.p>
           <motion.p
             className="p"
@@ -92,14 +90,13 @@ export const DesktopProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            I recognize that I&apos;m still traversing the early phases of this
-            expedition. The terrain of desktop development, particularly with C#
-            and WPF, remains both exhilarating and challenging. My skills have
-            evolved from tentative, hesitant keystrokes to more purposeful,
-            informed inputs. Though I may still be a neophyte, I hold a profound
-            sense of achievement for persisting along this educational passage,
-            as I work towards mastery in constructing seamless and sophisticated
-            desktop applications.
+            I know that I&apos;m still in the early stages of this journey.
+            Navigating the world of desktop development, especially with C# and
+            WPF, is both exciting and tough. My skills have grown from unsure,
+            cautious keystrokes to more confident, well-informed inputs. Even
+            though I&apos;m still a beginner, I feel really proud for sticking
+            with this learning path. I&apos;m working hard to become skilled at
+            creating smooth and advanced desktop applications.
           </motion.p>
         </motion.section>
       </motion.section>

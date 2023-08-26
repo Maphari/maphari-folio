@@ -25,7 +25,7 @@ export const WebProjects: React.FC = () => {
     stiffness: 100,
     duration: 3,
     delay: 0.8,
-  }
+  };
   return (
     <main className="web-project-container">
       <header className="web-project-container__header">
@@ -90,13 +90,13 @@ export const WebProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            When I began my journey into web development in the beginning, it
-            was tough, and I didn&apos;t grasp much. As time rolled on, I delved into
-            researching front end technologies and comprehending the
-            architecture of the web and its functioning. It was back in 2021
-            during my first year that I grappled with these concepts. However,
-            fast forward to today, I am proficient in web development, and my
-            focus is expanding towards the realm of back end web development.
+            When I started my journey into web development initially, it was
+            tough and I didn&apos;t understand much. As time went on, I got into
+            researching front-end technologies and understanding how the web
+            works and its structure. It was back in 2021 during my first year
+            when I was figuring out these things. But now, looking ahead to
+            today, I&apos;m really good at web development, and I&apos;m looking
+            to learn more about back-end web development.
           </motion.p>
 
           <motion.p
@@ -105,16 +105,14 @@ export const WebProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            In the initial stages of my web development journey, I found myself
-            faced with difficulty and a lack of understanding. As the days
-            turned into weeks and the weeks into months, I immersed myself in
-            the exploration of front end technologies and gained a deeper
-            understanding of the intricate structure and operations of the web.
-            Cast back to the year 2021, my introductory year, and there I was,
-            slowly piecing together the puzzle. Presently, my skills have grown,
-            allowing me to navigate the world of web development with
-            confidence, and my aspirations now extend to mastering the
-            intricacies of back end web development.
+            When I started my web development journey, I struggled to understand
+            things at first. As time went by, I spent more and more time diving
+            into front-end technologies and learning about how the web works.
+            Looking back to 2021, which was my first year, I was slowly figuring
+            things out. Now, my skills have grown, and I&apos;m comfortable
+            working in web development. And now, I&apos;m aiming to become
+            really skilled in the more complex aspects of back-end web
+            development.
           </motion.p>
           <motion.p
             className="p"
@@ -122,16 +120,15 @@ export const WebProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            Embarking on my venture into web development, the outset proved to
-            be a perplexing ordeal, leaving me bewildered. As time marched
-            forward, so did my determination to decipher the intricacies.
-            Through diligent research into the nuances of front end technologies
-            and the fundamental architecture governing the web&apos;s
-            functionality, I made significant strides. Reflecting upon the past,
-            specifically 2021, my inaugural year, I vividly recall grappling
-            with these nascent concepts. Today, I stand adept in web
-            development, and my horizons broaden as I set my sights on delving
-            into the domain of back end web development.
+            When I started my journey in web development, the beginning was
+            really confusing and left me feeling lost. But as time went on, my
+            determination to understand the complexities grew stronger. I put in
+            a lot of effort to research front-end technologies and the basic
+            structure that makes the web work. When I look back at the past,
+            especially in 2021, which was my first year, I remember struggling
+            with these new ideas. Today, I&apos;m skilled in web development, and I&apos;m
+            looking ahead to learn even more by getting into the world of
+            back-end web development.
           </motion.p>
         </motion.section>
       </motion.section>

@@ -18,13 +18,13 @@ interface ITransition {
 }
 
 export const MobileProjects: React.FC = () => {
-  const transition :ITransition = {
+  const transition: ITransition = {
     ease: "backInOut",
     type: "spring",
     stiffness: 100,
     duration: 3,
-    delay: 0.8
-  }
+    delay: 0.8,
+  };
   return (
     <main className="web-project-container">
       <header className="web-project-container__header">
@@ -72,16 +72,16 @@ export const MobileProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            When I began my journey into mobile development in the beginning, it
-            was tough and everything seemed a bit perplexing. I struggled to
-            grasp the concepts, feeling a bit lost. However, as time rolled on,
-            I delved into research about front-end technologies and grasped the
-            fundamental structure of mobile development, including getting a
-            handle on how React Native operates. This was back in 2022, during
-            my second year of studies. Presently, I&apos;m in a much more
-            confident position, proficient in mobile development. And now,
-            I&apos;m extending my skills further, venturing into the realm of
-            back-end mobile development.
+            When I kicked off my journey into mobile development at the start,
+            it was quite challenging and everything seemed a bit puzzling. I had
+            a hard time getting a grip on the concepts and felt a bit unsure.
+            But as time went on, I dug into researching front-end technologies
+            and got the hang of the basic structure of mobile development,
+            including understanding how React Native works. This was back in
+            2022, during my second year of studies. Right now, I&apos;m feeling
+            much more confident, and I&apos;ve become skilled in mobile
+            development. And at this point, I&apos;m taking things a step
+            further by exploring the world of back-end mobile development.
           </motion.p>
 
           <motion.p
@@ -90,18 +90,17 @@ export const MobileProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            In the early stages of my mobile development journey, I found myself
-            grappling with concepts and feeling quite befuddled. The terrain was
-            unfamiliar, and comprehending the nuances was a true challenge. As
-            time marched on, I immersed myself in exploring front-end
-            technologies, gradually unraveling the intricacies of mobile
-            development and gaining a solid understanding of the inner workings
-            of React Native. This was all unfolding in the backdrop of 2022,
-            while I was navigating through my second year of studies. These
-            days, my confidence has soared, and I&apos;ve honed my abilities in
-            mobile development significantly. Presently, I&apos;m setting my
-            sights on expanding my proficiency even further by delving into the
-            realm of back-end mobile development.
+            In the early stages of my journey in mobile development, I found
+            myself struggling to grasp concepts and feeling quite confused. The
+            territory was unfamiliar, and understanding the details was a real
+            challenge. As time went by, I got deeply into exploring front-end
+            technologies, slowly uncovering the complexities of mobile
+            development and building a strong grasp of how React Native really
+            works. All of this was happening in 2022, while I was making my way
+            through my second year of studies. Nowadays, my confidence has shot
+            up, and I&apos;ve really improved my skills in mobile development.
+            Right now, I&apos;m aiming to expand my expertise even more by
+            diving into the world of back-end mobile development.
           </motion.p>
           <motion.p
             className="p"
@@ -109,18 +108,16 @@ export const MobileProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            Back when I embarked on my mobile development journey, I was met
-            with a cascade of complexities and an aura of bewilderment. The
-            terrain was uncharted, and the intricacies of the field eluded my
-            grasp initially. However, with the passage of time, I plunged into
-            diligent research on the intricacies of front-end technologies. I
-            unraveled the architecture of mobile development and deciphered the
-            mechanics underlying the functioning of React Native. All of this
-            transpired in the year 2022, during the tenure of my second academic
-            year. At this juncture, my proficiency in mobile development has
-            soared to new heights, allowing me to confidently navigate its
-            landscape. As I stand today, I&apos;m reaching even further by immersing
-            myself in the domain of back-end mobile development.
+            When I started my journey into mobile development, I faced a bunch
+            of complexities and felt pretty confused. The whole thing was new to
+            me, and the details of the field were a bit hard to grasp at first.
+            But as time went on, I got deep into researching front-end
+            technologies. I understood the structure of mobile development and
+            figured out how React Native really works. This was all happening in
+            2022, during my second year of studies. Right now, I&apos;ve become
+            really good at mobile development, and I&apos;m confidently
+            navigating through it. As of now, I&apos;m taking it a step further
+            by diving into the world of back-end mobile development.
           </motion.p>
         </motion.section>
       </motion.section>

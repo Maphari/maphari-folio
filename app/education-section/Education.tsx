@@ -8,16 +8,14 @@ interface ITransition {
   stiffness?: number;
 }
 
-
 export const Education: React.FC = () => {
-
-  const transition :ITransition = {
+  const transition: ITransition = {
     ease: "backInOut",
     type: "spring",
     stiffness: 100,
     duration: 1,
-    delay: 0.8
-  }
+    delay: 0.8,
+  };
   return (
     <motion.section
       className="about-container px-[1.5rem] mb-[70px]"
@@ -43,10 +41,10 @@ export const Education: React.FC = () => {
             ALX Software Engineering Program
           </motion.h2>
           <motion.p className="font-[300] text-[13px] opacity-60">
-            As I get closer to finishing up my ALX online bootcamp, I can say
-            with confidence that it&apos;s been an incredible journey. Over the
-            past two months, I&apos;ve really dived into learning different
-            programming languages and taking on project building.
+            As I approach the end of my ALX online bootcamp, I can proudly say
+            that it&apos;s been an amazing journey. In the last two months,
+            I&apos;ve really dived into learning various programming languages
+            and tackling project building.
           </motion.p>
         </motion.div>
         <motion.div
@@ -81,9 +79,9 @@ export const Education: React.FC = () => {
             BSc Information Technology - SE
           </motion.h2>
           <motion.p className="font-[300] text-[13px] opacity-60">
-            As I finish my information technology degree, I reflect on an
-            amazing journey. Throughout the past three years, I&apos;ve
-            enthusiastically delved into learning programming languages.
+            As I wrap up my information technology degree, I look back on an
+            incredible journey. Over the past three years, I&apos;ve been really
+            excited about diving into learning programming languages.
           </motion.p>
         </motion.div>
         <motion.div
@@ -118,10 +116,10 @@ export const Education: React.FC = () => {
             HC Information Technology
           </motion.h2>
           <motion.p className="font-[300] text-[13px] opacity-60">
-            I started with just the basics in information technology, all in
-            preparation for my BSc in Information Technology. I&apos;ve learned
-            a lot about the fundamentals, and I can confidently say that the
-            effort has been worthwhile up to this day.
+            I began by grasping the foundations of information technology, all
+            in readiness for my BSc in Information Technology. I&apos;ve gained a
+            good understanding of the basics, and I can surely say that the hard
+            work has paid off up to this point.
           </motion.p>
         </motion.div>
         <motion.div

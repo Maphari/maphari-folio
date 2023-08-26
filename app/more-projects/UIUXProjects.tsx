@@ -27,7 +27,7 @@ export const UIUXProjects: React.FC = () => {
     stiffness: 100,
     duration: 3,
     delay: 0.8,
-  }
+  };
   return (
     <main className="web-project-container">
       <header className="web-project-container__header">
@@ -145,7 +145,6 @@ export const UIUXProjects: React.FC = () => {
               <span>Check Figma Design</span>
             </motion.div>
           </Link>
-        
         </ProjectCardMore>
       </section>
       <motion.section className="mt-20">
@@ -161,14 +160,14 @@ export const UIUXProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-            My venture into UI UX design kicked off with a playful vibe, as a
-            surge of ideas demanded expression. Yet, turning these ideas into
-            reality posed a challenge due to my lack of experience in aligning
-            design elements seamlessly. Spending quite some time without a clear
-            design direction prompted me to dive into the world of UI UX design,
-            seeking knowledge and refining skills. This journey of research and
-            learning allowed me to skillfully synchronize design
-            components.
+            My journey into UI UX design started off with a fun feeling, as a
+            bunch of ideas wanted to come out. But, making these ideas real
+            became tough because I didn&apos;t have much experience in fitting
+            design pieces together smoothly. Spending a good amount of time
+            without a clear design path pushed me into exploring the world of UI
+            UX design, looking for knowledge and getting better at the skills.
+            This journey of researching and learning helped me get really good
+            at putting design parts together skillfully.
           </motion.p>
 
           <motion.p
@@ -177,13 +176,13 @@ export const UIUXProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-           Today, armed with newfound knowledge and refined techniques, my
-            approach to UI UX design has undergone a remarkable transformation.
-            I now approach development with increased efficiency, equipped with
-            a clear structural framework and a product blueprint right from the
-            get-go. This evolution, from an experimental start to a proficient
-            methodology, underscores the significance of persistent learning and
-            the power of turning challenges into growth opportunities.
+            Today, with the new knowledge and improved techniques I&apos;ve
+            gained, my way of doing UI UX design has changed a lot. Now, I
+            handle development more effectively, having a clear plan and a
+            product plan right from the beginning. This change, from starting
+            out as a beginner to developing a solid approach, shows how
+            important it is to keep learning and turn challenges into chances to
+            grow.
           </motion.p>
           <motion.p
             className="p"
@@ -191,13 +190,13 @@ export const UIUXProjects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={transition}
           >
-             In the realm of UI UX design, my journey spotlights the fusion of
-            creativity and structured methodology. The spark of creativity that
-            initially ignited my interest has been channeled through learning,
-            resulting in a deep grasp of design principles. This synergy between
-            innovation and technique not only hones my approach, but also
-            empowers me to navigate the complexities of UI UX design with
-            confidence and prowess.
+            In the world of UI UX design, my journey highlights the blend of
+            creativity and structured ways of working. The initial burst of
+            creativity that got me interested has now been channeled through
+            learning, leading to a strong understanding of design rules. This
+            combination of coming up with new ideas and having the right methods
+            not only sharpens how I work, but also gives me the ability to
+            handle the tricky parts of UI UX design with confidence and skill.
           </motion.p>
         </motion.section>
       </motion.section>

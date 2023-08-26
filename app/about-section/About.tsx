@@ -33,13 +33,14 @@ export const About: () => React.JSX.Element = () => {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={transition}
       >
-        As a proactive software engineer, I possess a robust motivation and
-        self-starting attitude. I am capable of operating autonomously or with
-        minimal direction, all while adhering to industry best practices. My
-        foundation in programming analysis, application design, and analysis is
-        strong, complemented by my adeptness with a variety of development tools
-        and languages. Furthermore, I excel in collaborative environments,
-        effectively contributing to team achievements.
+        As a software engineer, I&apos;ve got a strong drive and a can-do
+        attitude. I can work on my own or with just a little guidance, and I
+        make sure to follow the best ways of doing things in the industry.
+        I&apos;m really good at understanding programming, designing
+        applications, and figuring out solutions. I&apos;m also comfortable
+        using lots of different tools and coding languages. Plus, I&apos;m great
+        at working with others in a team and making a meaningful contribution to
+        our goals.
       </motion.p>
 
       <motion.p
@@ -48,13 +49,13 @@ export const About: () => React.JSX.Element = () => {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={transition}
       >
-        As a programmer, I derive immense satisfaction from tackling challenges
-        head-on; it&apos;s an integral part of who I am. The world of coding
-        excites me profoundly, and I possess the skillset to create diverse
-        solutions, whether they involve crafting mobile apps, websites. My
-        proficiency spans languages like Java, C++, Python TypeScript,
-        JavaScript, and frameworks like React Native, Next.js, Express.js and
-        Javascript run time like Node.js.
+        As a programmer, I find great joy in taking on challenges directly;
+        it&apos;s just a part of who I am. The coding world really gets me
+        excited, and I have the know-how to come up with various solutions,
+        whether it&apos;s making mobile apps or websites. I&apos;m good at
+        languages like Java, C++, Python, TypeScript, and JavaScript, and I also
+        know my way around frameworks like React Native, Next.js, and backend
+        technologies like Express.js and nodejs. Node.js.
       </motion.p>
       <motion.p
         className="p"
@@ -62,14 +63,14 @@ export const About: () => React.JSX.Element = () => {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={transition}
       >
-        When I&apos;m not engrossed in programming, you&apos;ll find me
-        relishing a variety of other interests. I take delight in watching
-        cartoons, observing video game playthroughs, immersing myself in
-        nature&apos;s beauty, and indulging in enlightening documentaries.
-        Furthermore, spending quality time with my family brings me immense
-        happiness; it&apos;s a treasured source of joy outside of my coding
-        pursuits. Additionally, I&apos;m intrigued by programming-related
-        movies, finding them captivating and engaging.
+        When I&apos;m not all caught up in programming, you&apos;ll catch me
+        enjoying a bunch of other things. I really like watching cartoons,
+        checking out video game playthroughs, getting lost in the beauty of
+        nature, and watching interesting documentaries. Also, hanging out with
+        my family is a big source of happiness for me; it&apos;s something I
+        really treasure alongside my coding adventures. Plus, I&apos;m quite
+        curious about movies related to programming – I find them really
+        interesting and captivating.
       </motion.p>
     </motion.section>
   );

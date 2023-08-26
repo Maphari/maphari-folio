@@ -35,7 +35,7 @@ export const ProjectCard: React.FC<INavLinkProps> = ({
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={transition}
     >
-      <motion.div className="project-inner__top rounded py-4 max-w-[400px] min-h-[420px] px-5">
+      <motion.div className="project-inner__top rounded py-4 max-w-[400px] min-h-[400px] px-5">
         <Image
           src={ImageURL}
           alt="project image"
@@ -48,7 +48,7 @@ export const ProjectCard: React.FC<INavLinkProps> = ({
           <motion.h2 className="font-[700] text-[1.2rem] my-3">
             {header}
           </motion.h2>
-          <motion.p className="opacity-60 max-w-[30rem] text-sm font-[200] mb-3">
+          <motion.p className="opacity-60 max-w-[30rem] text-xs font-[200] mb-3">
             {explanation}
           </motion.p>
           <motion.div className="flex flex-wrap items-center gap-1">
