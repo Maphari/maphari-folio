@@ -37,7 +37,7 @@ export const UIUXProjects: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={transition}
         >
-          UI UX Designer <span className="text-yellow-600">Projects</span>
+          UI Designer <span className="text-yellow-600">Projects</span>
         </motion.h1>
       </header>
       <motion.h1
@@ -138,7 +138,7 @@ export const UIUXProjects: React.FC = () => {
       <motion.section className="mt-20">
         <header className="web-project-container__header">
           <h1 className="web-project-container__header-head text-center">
-            My UI UX Design <span className="text-yellow-600">Journey</span>
+            My UI Design <span className="text-yellow-600">Journey</span>
           </h1>
         </header>
         <motion.section className="text-center mt-14 about-container px-[1.5rem] mb-[70px]">

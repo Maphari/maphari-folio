@@ -116,7 +116,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          C++
+          C# | .NET MAUI
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -124,7 +124,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          .NET MAUI
+          C++ | Ureal Engine
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -140,7 +140,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          Spring Boot
+          MongoDB | Mongoose
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -148,23 +148,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          MongoDB
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Mongoose
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          UI UX Designer
+          UI Designer
         </motion.div>
       </motion.section>
     </motion.section>
