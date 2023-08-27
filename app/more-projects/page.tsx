@@ -72,7 +72,7 @@ const MoreProjects: React.FC = () => {
             onClick={uiuxActiveHandler}
           >
             <motion.span>
-              UI UI <motion.span className="prj-space">Designer</motion.span>
+              UI UX <motion.span className="prj-space">Designer</motion.span>
             </motion.span>
           </motion.div>
           <motion.div
