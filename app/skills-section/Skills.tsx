@@ -84,14 +84,6 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          React Native
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
           Java
         </motion.div>
         <motion.div
@@ -116,14 +108,6 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          C++ | Ureal Engine
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
           NodeJS | ExpressJS
         </motion.div>
         <motion.div
@@ -132,7 +116,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          MongoDB | Mongoose
+          MongoDB | Mongoose | SQL
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -140,7 +124,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          UI Designer
+          UI UX Designer
         </motion.div>
       </motion.section>
     </motion.section>
