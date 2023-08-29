@@ -116,7 +116,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          C++
+          Python
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
