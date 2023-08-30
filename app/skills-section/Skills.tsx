@@ -44,14 +44,6 @@ export const Skills: React.FC = () => {
         >
           C++
         </motion.div>
-      <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-        C# | ASP .NET
-      </motion.div>
       <motion.section className="mt-10 flex flex-wrap mx-auto items-center justify-center gap-3 max-w-[56rem]">
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
