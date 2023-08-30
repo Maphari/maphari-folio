@@ -140,7 +140,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          UI UX Designer
+          UIUX Designer
         </motion.div>
       </motion.section>
     </motion.section>
