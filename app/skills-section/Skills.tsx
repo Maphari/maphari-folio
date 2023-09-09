@@ -29,87 +29,54 @@ export const Skills: React.FC = () => {
         My Skills
       </motion.h1>
       <motion.section className="mt-10 flex flex-wrap mx-auto items-center justify-center gap-3 max-w-[56rem]">
-        <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-       HTML5
-      </motion.div>
-      <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-        CSS3
-      </motion.div>
-      <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-        SASS
-      </motion.div>
-        <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-        Tailwind CSS
-      </motion.div>
+       
      <motion.div
         className="bg-[#1F2937] py-3 px-4 rounded-xl"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={transtition}
       >
-        Java | JavaFX
+        C# .NET Framework
       </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          JavaScript | TypeScript
-        </motion.div>
         <motion.div
         className="bg-[#1F2937] py-3 px-4 rounded-xl"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={transtition}
       >
-        C#
+        ASP .NET
       </motion.div>
+          <motion.div
+          className="bg-[#1F2937] py-3 px-4 rounded-xl"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transtition}
+        >
+          .NET MAUI
+        </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          ReactJS | NextJS
+          JavaFX
         </motion.div>
-
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          React Native
-        </motion.div>
-        
-        <motion.div
+         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
           Python
+        </motion.div>
+        <motion.div
+          className="bg-[#1F2937] py-3 px-4 rounded-xl"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transtition}
+        >
+         NextJS (TypeScript)
         </motion.div>
         <motion.div
         className="bg-[#1F2937] py-3 px-4 rounded-xl"
