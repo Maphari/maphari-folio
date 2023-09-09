@@ -24,15 +24,6 @@ export const Footer: React.FC = ({}) => {
       >
         &copy; 2023 Phumudzo Maphari. All rights reserved.
       </motion.p>
-      <motion.p
-        className="mt-2"
-        initial={{ opacity: 0, y: -30, scale: 0.1 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={transition}
-      >
-        Website information: built with React & Next.js(App router), TypeScript, Tailwind
-        CSS, Framer Motion, nodemailer.
-      </motion.p>
     </motion.footer>
   );
 };
