@@ -15,6 +15,15 @@ export const Footer: React.FC = ({}) => {
     duration: 3,
     delay: 1,
   }
+  const updateYear = function(): string | number {
+    let year = new Date().getFullYear();
+    
+    if(year === 2023) {
+      return year
+    } else {
+      return `2023 - ${year}`
+    }
+  }
   return (
     <motion.footer className="text-center text-white opacity-30 my-5 font-[200] text-[12px] footer px-[1.5rem]">
       <motion.p
@@ -22,7 +31,7 @@ export const Footer: React.FC = ({}) => {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={transition}
       >
-        &copy; 2023 Phumudzo Maphari. All rights reserved.
+        &copy; {updateYear()} Phumudzo Maphari. All rights reserved.
       </motion.p>
     </motion.footer>
   );
