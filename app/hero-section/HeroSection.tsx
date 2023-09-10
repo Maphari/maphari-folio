@@ -53,7 +53,7 @@ export const HeroSection: React.FC = () => {
       >
         I&apos;m Maphari Phumudzo, a{" "}
         <motion.span className="font-[700] text-yellow-700">
-          C# Developer
+         Software Engineere
         </motion.span>{" "}
         skilled in turning{" "}
         <motion.span className="font-[700] text-yellow-700">ideas </motion.span>
@@ -65,7 +65,7 @@ export const HeroSection: React.FC = () => {
 
       <motion.div className="btn-container mt-12 mx-auto flex items-center gap-2 flex-wrap">
         <Link
-          href="https://drive.google.com/file/d/1NJ5QggygTHBdv_K8u5P5u7ZIzXWrqmeF/view?usp=sharing"
+          href="https://drive.google.com/file/d/17nlf-X03HhK7DP-S3BdHXkowF8ycyXQL/view?usp=sharing"
           target="_blank"
           download="Maphari phumudzo resume.pdf"
           className="flex items-center gap-2 px-1"
