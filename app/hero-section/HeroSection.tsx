@@ -53,7 +53,7 @@ export const HeroSection: React.FC = () => {
       >
         I&apos;m Maphari Phumudzo, a{" "}
         <motion.span className="font-[700] text-yellow-700">
-         Software Engineere
+         Software Engineer
         </motion.span>{" "}
         skilled in turning{" "}
         <motion.span className="font-[700] text-yellow-700">ideas </motion.span>
