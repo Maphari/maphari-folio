@@ -54,7 +54,7 @@ export const About: () => React.JSX.Element = () => {
         excited, and I have the know-how to come up with various solutions,
         whether it&apos;s making mobile apps or websites. I&apos;m good at
         languages like Python, Java, C++, TypeScript, and I also
-        know my way around frameworks like Flutter and Dart, Next.js, and backend
+        know my way around frameworks like React Native, Next.js, and backend
         technologies like Express.js, nodejs.
       </motion.p>
       <motion.p
