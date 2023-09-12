@@ -53,8 +53,8 @@ export const About: () => React.JSX.Element = () => {
         it&apos;s just a part of who I am. The coding world really gets me
         excited, and I have the know-how to come up with various solutions,
         whether it&apos;s making mobile apps or websites. I&apos;m good at
-        languages like Python, Java, C#, TypeScript, and I also
-        know my way around frameworks like React Native, .NET MAUI Next.js, and backend
+        languages like Python, C#, TypeScript, and I also
+        know my way around frameworks like React Native, .NET MAUI, ASP .NET, Next.js, and backend
         technologies like Express.js, nodejs.
       </motion.p>
       <motion.p

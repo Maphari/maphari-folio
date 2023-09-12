@@ -45,14 +45,6 @@ export const Skills: React.FC = () => {
       >
         Python
       </motion.div>    
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Java
-        </motion.div>
          <motion.div
         className="bg-[#1F2937] py-3 px-4 rounded-xl"
         initial={{ opacity: 0, x: -30 }}
@@ -76,6 +68,14 @@ export const Skills: React.FC = () => {
           transition={transtition}
         >
           ReactJS | NextJS 
+        </motion.div>
+        <motion.div
+          className="bg-[#1F2937] py-3 px-4 rounded-xl"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transtition}
+        >
+          ASP .NET
         </motion.div>
         <motion.div
         className="bg-[#1F2937] py-3 px-4 rounded-xl"
