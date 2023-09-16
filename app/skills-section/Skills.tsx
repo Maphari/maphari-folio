@@ -51,7 +51,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          C#
+          Java
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -68,14 +68,6 @@ export const Skills: React.FC = () => {
           transition={transtition}
         >
           React Native
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          .NET MAUI
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
