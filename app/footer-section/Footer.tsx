@@ -1,4 +1,5 @@
 import { React, motion } from "../imports/Imports";
+
 interface ITransition {
   ease?: string;
   type?: string;
@@ -15,6 +16,8 @@ export const Footer: React.FC = ({}) => {
     duration: 3,
     delay: 1,
   }
+
+ 
   return (
     <motion.footer className="text-center text-white opacity-30 my-5 font-[200] text-[12px] footer px-[1.5rem]">
       <motion.p
