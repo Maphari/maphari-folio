@@ -28,31 +28,23 @@ export const Skills: React.FC = () => {
       >
         My Skills
       </motion.h1>
-      <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-        Java | JavaFX
-      </motion.div>
-      <motion.div
+      <motion.section className="mt-10 flex flex-wrap mx-auto items-center justify-center gap-3 max-w-[56rem]">
+        <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          C++
+          Python
         </motion.div>
-      <motion.div
-        className="bg-[#1F2937] py-3 px-4 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={transtition}
-      >
-        C# | ASP .NET
-      </motion.div>
-      <motion.section className="mt-10 flex flex-wrap mx-auto items-center justify-center gap-3 max-w-[56rem]">
+        <motion.div
+          className="bg-[#1F2937] py-3 px-4 rounded-xl"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transtition}
+        >
+          Java
+        </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
           initial={{ opacity: 0, x: -30 }}
@@ -67,15 +59,6 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          ReactJS | NextJS
-        </motion.div>
-
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
           React Native
         </motion.div>
         <motion.div
@@ -84,15 +67,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          Android Development{"<Java>"}
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Python
+          ReactJS | NextJS
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -108,7 +83,7 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          MongoDB | SQL
+          MongoDB | Mongoose
         </motion.div>
         <motion.div
           className="bg-[#1F2937] py-3 px-4 rounded-xl"
@@ -116,7 +91,15 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={transtition}
         >
-          UIUX Designer
+          SQL
+        </motion.div>
+        <motion.div
+          className="bg-[#1F2937] py-3 px-4 rounded-xl"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={transtition}
+        >
+          UI UX Designer
         </motion.div>
       </motion.section>
     </motion.section>

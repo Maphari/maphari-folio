@@ -86,7 +86,7 @@ const MoreProjects: React.FC = () => {
               <motion.span className="prj-space">Development</motion.span>
             </motion.span>
           </motion.div>
-{/*           <motion.div
+          {/* <motion.div
             className={`more-project-nav__card${
               isdesktopActive && "-one opacity-90"
             } transition-all duration-700 ease-linear p-[0.7rem] rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer`}
