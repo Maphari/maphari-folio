@@ -16,10 +16,7 @@ export const Footer: React.FC = ({}) => {
     duration: 3,
     delay: 1,
   }
-<<<<<<< HEAD
 
- 
-=======
   const updateYear = function(): string | number {
     let year = new Date().getFullYear();
     
@@ -29,7 +26,6 @@ export const Footer: React.FC = ({}) => {
       return `2023 - ${year}`
     }
   }
->>>>>>> 437a33d6e57373e664cede568d065edcabed35bd
   return (
     <motion.footer className="text-center text-white opacity-30 my-5 font-[200] text-[12px] footer px-[1.5rem]">
       <motion.p
