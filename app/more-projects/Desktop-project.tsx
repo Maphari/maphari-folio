@@ -26,7 +26,7 @@ export const DesktopProjects: React.FC = () => {
   };
 
   return (
-    <main className="web-project-container">
+    <main className="web-project-container overflow-hidden">
       <header className="web-project-container__header">
         <h1 className="web-project-container__header-head text-center">
           Desktop development <span className="text-yellow-600">Projects</span>

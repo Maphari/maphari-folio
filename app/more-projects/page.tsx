@@ -12,7 +12,7 @@ const MoreProjects: React.FC = () => {
   const [isWebActive, setIsWebActive] = useState<boolean>(true);
   const [isMobileActive, setIsMobileActive] = useState<boolean>(false);
   const [isUIUXActive, setIsUIUXActive] = useState<boolean>(false);
-  const [isdesktopActive, setIsDeskopActive] = useState<boolean>(false);
+  const [isDesktopActive, setIsDesktopActive] = useState<boolean>(false);
 
   type VoidType = () => void;
 
@@ -26,7 +26,7 @@ const MoreProjects: React.FC = () => {
     setIsMobileActive(mobile);
     setIsUIUXActive(uiux);
     setIsWebActive(web);
-    setIsDeskopActive(desktop)
+    setIsDesktopActive(desktop)
   };
 
   const webActiveHandler: VoidType = () => {
@@ -48,7 +48,7 @@ const MoreProjects: React.FC = () => {
     if (isWebActive) return <WebProjects />;
     else if (isMobileActive) return <MobileProjects />;
     else if (isUIUXActive) return <UIUXProjects />;
-    else if (isdesktopActive) return <DesktopProjects />
+    else if (isDesktopActive) return <DesktopProjects />
   };
 
   return (
@@ -86,16 +86,16 @@ const MoreProjects: React.FC = () => {
               <motion.span className="prj-space">Development</motion.span>
             </motion.span>
           </motion.div>
-          {/* <motion.div
+          <motion.div
             className={`more-project-nav__card${
-              isdesktopActive && "-one opacity-90"
+              isDesktopActive && "-one opacity-90"
             } transition-all duration-700 ease-linear p-[0.7rem] rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer`}
             onClick={desktopActiveHandler}
           >
             <motion.span>
               Desktop <motion.span className="prj-space">Development</motion.span>
             </motion.span>
-          </motion.div> */}
+          </motion.div>
         </motion.header>
       </motion.nav>
       <div className=" padding-div pt-[9rem]"></div>
