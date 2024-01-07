@@ -65,9 +65,9 @@ export const HeroSection: React.FC = () => {
 
       <motion.div className="btn-container mt-12 mx-auto flex items-center gap-2 flex-wrap">
         <Link
-          href="https://drive.google.com/file/d/15R0zh2qkQOzGMTGp_gUzha93yXllK47H/view?usp=sharing"
+          href="https://drive.google.com/file/d/19li9kDNbBM0HsYhZXumZSpi4h3H4yRh0/view?usp=sharing"
           target="_blank"
-          download="Maphari Phumudzo CV.pdf"
+          download="Phumudzo Maphari CV.pdf"
           className="flex items-center gap-2 px-1"
         >
           <motion.button
