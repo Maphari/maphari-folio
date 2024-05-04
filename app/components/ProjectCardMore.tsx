@@ -29,7 +29,7 @@ export const ProjectCardMore: React.FC<INavLinkProps> = ({
   };
   return (
     <motion.section
-      className="project-inner"
+      className="project-inner text-white"
       initial={{ opacity: 0, y: -30, scale: 0.1 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={transition}

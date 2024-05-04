@@ -1,21 +1,48 @@
-import { React, motion } from "../imports/Imports";
+import { React, motion, transition } from "../imports/Imports";
 
-interface ITransition {
-  ease?: string;
-  type?: string;
-  duration?: number;
-  delay?: number;
-  stiffness?: number;
+interface IEducationProps {
+  title: string;
+  description: string;
+  year: string;
+  isLast: boolean;
 }
 
+const educationData: IEducationProps[] = [
+  {
+    title: "IBM DevOps and Software Engineering Professional Certificate",
+    description: `I have completed the IBM DevOps and Software Engineering Professional Certificate. I look back on an
+    incredible journey.`,
+    year: "FEB 2024 - JUN 2024",
+    isLast: false,
+  },
+  {
+    title: "BSc Honours in Information Technology - Data Engineering",
+    description: `As I wrap up my honours degree in information technology and data engineering, I look back on an
+    incredible journey. Over the past three years, I&apos;ve been really
+    excited about diving into learning programming languages.`,
+    year: "JAN 2024 - DEC 2024",
+    isLast: false,
+  },
+  {
+    title: " BSc Information Technology - Software Engineering",
+    description: `I have finished my information technology degree, I look back on an
+    incredible journey. Over the past three years, I&apos;ve been really
+    excited about diving into learning programming languages.`,
+    year: "JAN 2021 - DEC 2023",
+    isLast: false,
+  },
+  {
+    title: "HC Information Technology",
+    description: ` I began by grasping the foundations of information technology, all
+    in readiness for my BSc in Information Technology. I&apos;ve gained
+    a good understanding of the basics, and I can surely say that the
+    hard work has paid off up to this point.`,
+    year: "JAN 2019 - DEC 2020",
+    isLast: true,
+  },
+];
+
 export const Education: React.FC = () => {
-  const transition: ITransition = {
-    ease: "backInOut",
-    type: "spring",
-    stiffness: 100,
-    duration: 1,
-    delay: 0.8,
-  };
   return (
     <motion.section
       className="about-container px-[1.5rem] mb-[70px]"
@@ -31,111 +58,46 @@ export const Education: React.FC = () => {
       </motion.h1>
       <motion.section className="flex flex-col max-w-[30rem] py-10 mx-auto">
         {/* start here */}
-        <motion.div
-          className="h-auto edu-first font-[300] rounded"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        >
-          <motion.h2 className="mb-2 font-[600] text-[19px]">
-            ALX Software Engineering Program
-          </motion.h2>
-          <motion.p className="font-[300] text-[13px] opacity-60">
-            As I approach the end of my ALX online bootcamp, I can proudly say
-            that it&apos;s been an amazing journey. In the last two months,
-            I&apos;ve really dived into learning various programming languages
-            and tackling project building.
-          </motion.p>
-        </motion.div>
-        <motion.div
-          className="w-2 mx-auto h-[2.5rem] edu-line"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        ></motion.div>
-        <motion.div
-          className="h-auto flex font-[500] items-center justify-center edu-last rounded"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        >
-          2023 - 2024
-        </motion.div>
-        <motion.div
-          className="w-2 mx-auto h-[2.5rem] edu-line"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        ></motion.div>
-        {/* ends here */}
-        {/* start here */}
-        <motion.div
-          className="h-auto edu-first font-[300] rounded"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        >
-          <motion.h2 className="mb-2 font-[600] text-[19px]">
-            BSc Information Technology - SE
-          </motion.h2>
-          <motion.p className="font-[300] text-[13px] opacity-60">
-            As I wrap up my information technology degree, I look back on an
-            incredible journey. Over the past three years, I&apos;ve been really
-            excited about diving into learning programming languages.
-          </motion.p>
-        </motion.div>
-        <motion.div
-          className="w-2 mx-auto h-[2.5rem] edu-line"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        ></motion.div>
-        <motion.div
-          className="h-auto flex font-[500] rounded items-center justify-center edu-last"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        >
-          2021 - 2023
-        </motion.div>
-        <motion.div
-          className="w-2 mx-auto h-[2.5rem] edu-line"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        ></motion.div>
-        {/* ends here */}
-        {/* start here */}
-        <motion.div
-          className="h-auto edu-first font-[300] rounded"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        >
-          <motion.h2 className="mb-2 font-[600] text-[19px]">
-            HC Information Technology
-          </motion.h2>
-          <motion.p className="font-[300] text-[13px] opacity-60">
-            I began by grasping the foundations of information technology, all
-            in readiness for my BSc in Information Technology. I&apos;ve gained a
-            good understanding of the basics, and I can surely say that the hard
-            work has paid off up to this point.
-          </motion.p>
-        </motion.div>
-        <motion.div
-          className="w-2 mx-auto h-[2.5rem] edu-line"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        ></motion.div>
-        <motion.div
-          className="h-auto flex font-[500] items-center justify-center edu-last rounded"
-          initial={{ opacity: 0, y: -30, scale: 0.1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={transition}
-        >
-          2020 - 2021
-        </motion.div>
+        {educationData.length > 0 &&
+          educationData.map((data: IEducationProps, index: number) => (
+            <motion.section key={index}>
+              <motion.div
+                className="h-auto edu-first font-[300] rounded"
+                initial={{ opacity: 0, y: -30, scale: 0.1 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={transition}
+              >
+                <motion.h2 className="mb-2 font-[600] text-[19px]">
+                  {data.title}
+                </motion.h2>
+                <motion.p className="font-[300] text-[13px] opacity-60">
+                  {data.description}
+                </motion.p>
+              </motion.div>
+              <motion.div
+                className="w-2 mx-auto h-[2.5rem] edu-line"
+                initial={{ opacity: 0, y: -30, scale: 0.1 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={transition}
+              ></motion.div>
+              <motion.div
+                className="text-sm flex items-center justify-center font-[500] edu-last rounded"
+                initial={{ opacity: 0, y: -30, scale: 0.1 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={transition}
+              >
+                <span className="w-full px-3">{data.year}</span>
+              </motion.div>
+              {!data.isLast && (
+                <motion.div
+                  className="w-2 mx-auto h-[2.5rem] edu-line"
+                  initial={{ opacity: 0, y: -30, scale: 0.1 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={transition}
+                ></motion.div>
+              )}
+            </motion.section>
+          ))}
         {/* ends here */}
       </motion.section>
     </motion.section>

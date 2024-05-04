@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 let errorMessage: string | unknown;
-let succesMessage: boolean | string;
+let successMessage: boolean | string;
 
 interface IMailOptions {
   from?: string;
@@ -27,7 +27,7 @@ const transpoter: nodemailer.Transporter<SMTPTransport.SentMessageInfo> =
 
 transpoter.verify((err, success) => {
   if (err) errorMessage = err;
-  else succesMessage = success;
+  else successMessage = success;
 });
 
 export async function POST(req: NextRequest,  res:NextRequest) {
@@ -54,7 +54,7 @@ const body =  await req.json()
 
   try {
     const info = await transpoter.sendMail(mailOptions);
-    if (succesMessage && info.response) {
+    if (successMessage && info.response) {
       return new NextResponse(JSON.stringify({ message: "Email sent succsessfully!😉😉", messageID: info.messageId }))
     } else {
       return new NextResponse(JSON.stringify({ error: "Failed to sent email try again later😭😭" }))

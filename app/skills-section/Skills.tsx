@@ -1,20 +1,26 @@
-import { React, motion } from "@/app/imports/Imports";
+import { React, motion, transition } from "@/app/imports/Imports";
 
-interface ITransition {
-  ease?: string;
-  type?: string;
-  duration?: number;
-  delay?: number;
-  stiffness?: number;
-}
+
+const skills: string[] = [
+  "Python",
+  "C++",
+  "Java",
+  "Typescript",
+  "HTML5",
+  "CSS3",
+  "SASS",
+  "Tailwind",
+  "ReactJS",
+  "NextJS",
+  "React Native",
+  "NodeJS",
+  "ExpressJS",
+  "mySQL",
+  "MongoDB",
+];
 
 export const Skills: React.FC = () => {
-  const transtition: ITransition = {
-    ease: "backInOut",
-    type: "spring",
-    duration: 1,
-    delay: 0.8,
-  };
+ 
   return (
     <motion.section
       className=" about-container px-[1.5rem] mb-[70px]"
@@ -24,155 +30,23 @@ export const Skills: React.FC = () => {
         className="text-center"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={transtition}
+        transition={transition}
       >
         My Skills
       </motion.h1>
       <motion.section className="mt-10 flex flex-wrap mx-auto items-center justify-center gap-3 max-w-[56rem]">
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Python
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          C++
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-         Java
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          HTML 5
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          CSS 3
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          SASS
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Tailwind CSS
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          JavaScript
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          TypeScript
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          ReactJS
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Redux
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-         React Native
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          NodeJS
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          ExpressJS
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          MySQL
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          MongoDB
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          Mongoose
-        </motion.div>
-        <motion.div
-          className="bg-[#1F2937] py-3 px-4 rounded-xl"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={transtition}
-        >
-          UI Designer
-        </motion.div>
+        {skills.length > 0 &&
+          skills.map((skill: string, index: number) => (
+            <motion.div
+              key={index}
+              className="bg-[#1F2937] py-3 px-4 rounded-xl"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={transition}
+            >
+              {skill}
+            </motion.div>
+          ))}
       </motion.section>
     </motion.section>
   );

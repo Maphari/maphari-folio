@@ -6,19 +6,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { transition } from "../utils/transition";
 
 import LOGO from "@/app/assets/favicon/logo.ico";
 import PROFILE from "@/app/assets/image/profile.jpeg";
 import WEB_DEV_REQUEST_SHOWCASE from "@/app/assets/image/request-web-d.png";
 import WEB_DEV_COMMUNICATEE_SHOWCASE from "@/app/assets/image/web-development.png";
 import WEB_DEV_ELITE_SHOWCASE from "@/app/assets/image/elite.png";
-import WEB_DEV_WEFIND_SHOWCASE from "@/app/assets/image/wefind.png";
-import UIUX_COMMUNICATEE_SHOWCASE from "@/app/assets/image/ux-communicatee.png";
-import UIUX_RENTAL_SHOWCASE from "@/app/assets/image/ux-rental.png";
-import UIUX_WEFIND_SHOWCASE from "@/app/assets/image/ux-wefind.png";
-import UIUX_WEFIND_MOBILE_SHOWCASE from "@/app/assets/image/mobile.png";
-import UIUX_REQUEST_MOBILE_SHOWCASE from "@/app/assets/image/mobile-request.png";
-import DKT_LOGIN_SHOWCASE from "@/app/assets/image/dkt-dev.png";
 
 import { BiRightArrowAlt, BiLogoFigma } from "react-icons/bi";
 import { HiDocumentDownload } from "react-icons/hi";
@@ -43,23 +37,14 @@ import { Education } from "../education-section/Education";
 import { Contact } from "../contact-section/Contact";
 import { Footer } from "../footer-section/Footer";
 
-// assets exports
+
 export {
   LOGO,
   PROFILE,
   WEB_DEV_COMMUNICATEE_SHOWCASE,
   WEB_DEV_REQUEST_SHOWCASE,
   WEB_DEV_ELITE_SHOWCASE,
-  WEB_DEV_WEFIND_SHOWCASE,
-  UIUX_COMMUNICATEE_SHOWCASE,
-  UIUX_RENTAL_SHOWCASE,
-  UIUX_WEFIND_SHOWCASE,
-  UIUX_WEFIND_MOBILE_SHOWCASE,
-  UIUX_REQUEST_MOBILE_SHOWCASE,
-  DKT_LOGIN_SHOWCASE,
 };
-
-// Reactjs | nextjs exports
 export {
   React,
   RootLayout,
@@ -71,7 +56,6 @@ export {
   Image,
 };
 
-// Components imports
 export {
   Navigation,
   NavLink,
@@ -87,10 +71,8 @@ export {
   Footer,
 };
 
-// third party exports
-export { motion, useScroll, scroll };
+export { motion, useScroll, scroll, transition };
 
-// icon exports
 export {
   BiRightArrowAlt,
   FaLinkedinIn,

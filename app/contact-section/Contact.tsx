@@ -1,14 +1,11 @@
-import { React, motion, useState, RiMailSendLine } from "@/app/imports/Imports";
-import { toast } from "react-toastify";
-import axios from "axios";
-
-interface ITransition {
-  ease?: string;
-  type?: string;
-  duration?: number;
-  delay?: number;
-  stiffness?: number;
-}
+import {
+  React,
+  motion,
+  useState,
+  RiMailSendLine,
+  transition,
+} from "@/app/imports/Imports";
+import { successToast, errorToast } from "../utils/toastify_util";
 
 export const Contact: React.FC = () => {
   type STATE_UNION = string | boolean | any;
@@ -18,36 +15,6 @@ export const Contact: React.FC = () => {
   const [emailError, setEmailError] = useState<STATE_UNION>("");
   const [subjectError, setSubjectError] = useState<STATE_UNION>("");
   const [messageError, setMessageError] = useState<STATE_UNION>("");
-
-  const successToast: (message: string | any) => void = (
-    message: string | any
-  ) => {
-    toast.success(message, {
-      toastId: "success",
-      position: "bottom-left",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
-
-  const errorTaost: (message: any) => void = (message: string | any) => {
-    toast.error(message, {
-      toastId: "error",
-      position: "bottom-left",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
 
   const emailValidatorHandler: (input: string) => boolean = (input: string) => {
     const emailReg: RegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
@@ -62,7 +29,7 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const subjectValidorErrorHandler: () => void = () => {
+  const subjectValidatorErrorHandler: () => void = () => {
     if (subject.length <= 5) {
       setSubjectError("subject should be more than 5 characters");
     } else {
@@ -70,19 +37,12 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const messageValidorErrorHandler: () => void = () => {
+  const messageValidatorErrorHandler: () => void = () => {
     if (message.length <= 5) {
       setMessageError("Message should be more than 5 characters");
     } else {
       setMessageError("");
     }
-  };
-
-  const transition: ITransition = {
-    ease: "backInOut",
-    type: "spring",
-    duration: 1,
-    delay: 0.8,
   };
 
   const onSubmitHandler: (e: React.FormEvent<HTMLFormElement>) => void = async (
@@ -91,32 +51,33 @@ export const Contact: React.FC = () => {
     try {
       e.preventDefault();
       emailValidatorErrorHandler();
-      messageValidorErrorHandler();
-      subjectValidorErrorHandler();
+      messageValidatorErrorHandler();
+      subjectValidatorErrorHandler();
 
       const res = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, message, subject }),
       });
-      
+
       if (!res.ok) {
-        return errorTaost(`Request failed with status: ${res.status}`);
+        return errorToast(`Request failed with status: ${res.status}`);
       }
-    
+
       const data = await res.json();
 
-      if(data?.messageID && !messageError && !subjectError && !emailError) {
+      if (data?.messageID && !messageError && !subjectError && !emailError) {
         successToast(data.message);
       } else {
-        errorTaost(data.error)
+        errorToast(data.error);
       }
     } catch (error) {
-      errorTaost("Internal Server error😭😭");
+      errorToast("Internal Server error😭😭");
     }
   };
+
 
   return (
     <motion.section
@@ -176,7 +137,7 @@ export const Contact: React.FC = () => {
             placeholder="Enter your Subject"
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
               setSubject(e.target.value);
-              subjectValidorErrorHandler();
+              subjectValidatorErrorHandler();
             }}
             value={subject}
             className={`p-3 text-sm outline-none rounded-lg send-input-email ${
@@ -192,7 +153,7 @@ export const Contact: React.FC = () => {
             placeholder="Enter your message"
             onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
               setMessage(e.target.value);
-              messageValidorErrorHandler();
+              messageValidatorErrorHandler();
             }}
             value={message}
             className={`p-3 text-sm outline-none rounded-lg send-input-message ${

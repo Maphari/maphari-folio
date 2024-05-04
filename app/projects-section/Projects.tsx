@@ -17,6 +17,41 @@ interface ITransition {
   stiffness?: number;
 }
 
+interface ICardProperties {
+  imageURL: string;
+  header: string;
+  explanation: string;
+  technologies: string[];
+}
+
+const CardData: ICardProperties[] = [
+  {
+    imageURL: WEB_DEV_COMMUNICATEE_SHOWCASE.src,
+    header: "Communicatee Web App",
+    explanation:
+      "This web app called communicatee was build to help people with package delivery and to help people move from their old place to the new place.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "SASS",
+      "Tailwind",
+      "ReactJS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Mongoose",
+      "PassportJS",
+    ],
+  },
+  {
+    imageURL: WEB_DEV_REQUEST_SHOWCASE.src,
+    header: "Network Web App",
+    explanation:
+      "This website was designed to help people create network to grow their businesses and make it easy for people who want to succeed through the internet.",
+    technologies: ["HTML5", "CSS3", "SASS", "Tailwind", "ReactJS"],
+  },
+];
+
 export const Projects: React.FC = () => {
   const router = useRouter();
   const transition: ITransition = {
@@ -28,7 +63,7 @@ export const Projects: React.FC = () => {
   };
   return (
     <motion.section
-      className=" about-container px-[1.5rem] mb-[70px] relative"
+      className="about-container px-[1.5rem] mb-[70px] relative"
       id="projects"
     >
       <motion.h1
@@ -40,56 +75,27 @@ export const Projects: React.FC = () => {
         My Projects
       </motion.h1>
 
-      <ProjectCard
-        ImageURL={WEB_DEV_COMMUNICATEE_SHOWCASE.src}
-        header="Communicatee Web App"
-        explanation="This web app called communicatee was build to help people with package delivery and to help people move from their old place to the new place."
-      >
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          HTML5
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">CSS3</motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">SASS</motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          Tailwind
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          ReactJS
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          NodeJS
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          ExpressJS
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          MongoDB
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          Mongoose
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          PassportJS
-        </motion.div>
-      </ProjectCard>
-
-      <ProjectCard
-        ImageURL={WEB_DEV_REQUEST_SHOWCASE.src}
-        header="Network Web App"
-        explanation="This website was designed to help people create network to grow their businesses and make it easy for people who want to succseed through the internet."
-      >
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          HTML5
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">CSS3</motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">SASS</motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          Tailwind
-        </motion.div>
-        <motion.div className="cat-prj rounded-xl text-[10px]">
-          ReactJS
-        </motion.div>
-      </ProjectCard>
+      <motion.section className="flex items-center justify-center gap-3 flex-wrap">
+        {CardData.length > 0 &&
+          CardData.map((card: ICardProperties, index: number) => (
+            <ProjectCard
+              key={index}
+              ImageURL={card.imageURL}
+              header={card.header}
+              explanation={card.explanation}
+            >
+              {card.technologies.length > 0 &&
+                card.technologies.map((tech: string, index: number) => (
+                  <motion.div
+                    key={index}
+                    className="cat-prj rounded-xl text-[10px]"
+                  >
+                    {tech}
+                  </motion.div>
+                ))}
+            </ProjectCard>
+          ))}
+      </motion.section>
 
       <motion.section className="my-10 mx-auto max-w-[11rem]">
         <motion.button

@@ -1,26 +1,10 @@
-import { React, motion } from "../imports/Imports";
-
-interface ITransition {
-  ease?: string;
-  type?: string;
-  duration?: number;
-  delay?: number;
-  stiffness?: number;
-}
+import { React, motion, transition } from "../imports/Imports";
 
 export const Footer: React.FC = ({}) => {
-  const transition: ITransition = {
-    ease: "backInOut",
-    type: "spring",
-    stiffness: 100,
-    duration: 3,
-    delay: 1,
-  }
-
   const updateYear = function(): string | number {
     let year = new Date().getFullYear();
     
-    if(year === 2023) {
+    if(year === new Date().getFullYear()) {
       return year
     } else {
       return `2023 - ${year}`

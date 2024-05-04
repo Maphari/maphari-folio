@@ -1,105 +1,77 @@
 "use client";
 
-import { React, motion, useState } from "../imports/Imports";
 import {
-  WebProjects,
-  MobileProjects,
-  UIUXProjects,
-  DesktopProjects
-} from "./More-projects-imports";
+  BsGithub,
+  Link,
+  ProjectCardMore,
+  React,
+  WEB_DEV_COMMUNICATEE_SHOWCASE,
+  WEB_DEV_REQUEST_SHOWCASE,
+  WEB_DEV_ELITE_SHOWCASE,
+  motion,
+  Footer,
+} from "../imports/Imports";
+
+interface IProjectCardMore {
+  ImageURL: string;
+  header: string;
+  explanation: string;
+  href: string;
+}
+
+const projectData: IProjectCardMore[] = [
+  {
+    ImageURL: WEB_DEV_COMMUNICATEE_SHOWCASE.src,
+    header: "Communicatee Web App",
+    explanation:
+      "This web app called communicatee was build to help people with package delivery and to help people move from their old place to the new place.",
+    href: "https://github.com/Maphari/communicate.com",
+  },
+  {
+    ImageURL: WEB_DEV_REQUEST_SHOWCASE.src,
+    header: "Request Website",
+    explanation:
+      "This website was designed to help people create network to grow their businesses and make it easy for people who want to succeed through the internet.",
+    href: "https://github.com/Maphari/request.com",
+  },
+  {
+    ImageURL: WEB_DEV_ELITE_SHOWCASE.src,
+    header: "Wefind Website",
+    explanation:
+      "This website was designed to help people find their desired estate online and get to explore more in online estate giving users flexibility.",
+    href: "https://github.com/Maphari/weBook.com",
+  },
+];
 
 const MoreProjects: React.FC = () => {
-  const [isWebActive, setIsWebActive] = useState<boolean>(true);
-  const [isMobileActive, setIsMobileActive] = useState<boolean>(false);
-  const [isUIUXActive, setIsUIUXActive] = useState<boolean>(false);
-  const [isDesktopActive, setIsDesktopActive] = useState<boolean>(false);
-
-  type VoidType = () => void;
-
-  const whichIsActiveHandler: (
-    web: boolean,
-    mobile: boolean,
-    uiux: boolean,
-    desktop: boolean,
-    game: boolean
-  ) => void = (web: boolean, mobile: boolean, uiux: boolean, desktop:boolean) => {
-    setIsMobileActive(mobile);
-    setIsUIUXActive(uiux);
-    setIsWebActive(web);
-    setIsDesktopActive(desktop)
-  };
-
-  const webActiveHandler: VoidType = () => {
-    whichIsActiveHandler(true, false, false, false, false);
-  };
-
-  const mobileActiveHandler: VoidType = () => {
-    whichIsActiveHandler(false, true, false, false, false);
-  };
-
-  const uiuxActiveHandler: VoidType = () => {
-    whichIsActiveHandler(false, false, true, false, false);
-  };
-  const desktopActiveHandler: VoidType = () => {
-    whichIsActiveHandler(false, false, false, true, false);
-  };
-
-  const RenderComponent: React.FC = () => {
-    if (isWebActive) return <WebProjects />;
-    else if (isMobileActive) return <MobileProjects />;
-    else if (isUIUXActive) return <UIUXProjects />;
-    else if (isDesktopActive) return <DesktopProjects />
-  };
-
   return (
     <>
-      <motion.nav className="more-project-nav">
-        <motion.header className="more-project-nav__card rounded-full p-2">
-          <motion.div
-            className={`more-project-nav__card${
-              isWebActive && "-one opacity-90"
-            } transition-all duration-700 ease-linear p-[0.7rem] rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer`}
-            onClick={webActiveHandler}
-          >
-            <motion.span>
-              Web <motion.span className="prj-space">Development</motion.span>
-            </motion.span>
-          </motion.div>
-          <motion.div
-            className={`more-project-nav__card${
-              isUIUXActive && "-one opacity-90"
-            } transition-all duration-700 ease-linear p-[0.7rem] hover:opacity-100 rounded-full opacity-50 hover:cursor-pointer`}
-            onClick={uiuxActiveHandler}
-          >
-            <motion.span>
-              UI UX <motion.span className="prj-space">Designer</motion.span>
-            </motion.span>
-          </motion.div>
-          <motion.div
-            className={`more-project-nav__card${
-              isMobileActive && "-one opacity-90"
-            } transition-all duration-700 ease-linear p-[0.7rem] rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer`}
-            onClick={mobileActiveHandler}
-          >
-            <motion.span>
-              Mobile{" "}
-              <motion.span className="prj-space">Development</motion.span>
-            </motion.span>
-          </motion.div>
-          <motion.div
-            className={`more-project-nav__card${
-              isDesktopActive && "-one opacity-90"
-            } transition-all duration-700 ease-linear p-[0.7rem] rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer`}
-            onClick={desktopActiveHandler}
-          >
-            <motion.span>
-              Desktop <motion.span className="prj-space">Development</motion.span>
-            </motion.span>
-          </motion.div>
+      <motion.nav>
+        <motion.header className="bg-[#090c11] p-4 m-4 rounded-2xl">
+          <motion.h1 className="text-lg text-white font-medium">
+            More Projects
+          </motion.h1>
         </motion.header>
       </motion.nav>
-      <div className=" padding-div pt-[9rem]"></div>
-      <RenderComponent />
+      <section className="py-10 mb-10 flex items-center justify-center gap-3 flex-wrap px-[1.5rem]">
+        {projectData.length > 0 &&
+          projectData.map((project: IProjectCardMore, index: number) => (
+            <ProjectCardMore
+              key={index}
+              ImageURL={project.ImageURL}
+              header={project.header}
+              explanation={project.explanation}
+            >
+              <Link href={project.href} target="_blank">
+                <motion.div className="cat-prj rounded-xl text-[10px] flex items-center gap-2">
+                  <BsGithub />
+                  <span>Check Repository</span>
+                </motion.div>
+              </Link>
+            </ProjectCardMore>
+          ))}
+      </section>
+      <Footer />
     </>
   );
 };

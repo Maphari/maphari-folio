@@ -6,6 +6,13 @@ import {
   NavLink,
 } from "@/app/imports/Imports";
 
+interface INavigation {
+  title: string;
+  state: boolean;
+  href: string;
+  onClick: any;
+}
+
 export const Navigation: React.FC = () => {
   const [isSectionFocus, setIsSectionFocus] = useState<string>("");
 
@@ -31,46 +38,59 @@ export const Navigation: React.FC = () => {
     };
   }, []);
 
+  const navLink: INavigation[] = [
+    {
+      title: "Home",
+      state: isSectionFocus === "home",
+      href: "#home",
+      onClick: () => handleLinkClick.bind(this, "home"),
+    },
+    {
+      title: "About",
+      state: isSectionFocus === "about",
+      href: "#about",
+      onClick: () => handleLinkClick.bind(this, "about"),
+    },
+    {
+      title: "Projects",
+      state: isSectionFocus === "projects",
+      href: "#projects",
+      onClick: () => handleLinkClick.bind(this, "projects"),
+    },
+    {
+      title: "Skills",
+      state: isSectionFocus === "skills",
+      href: "#skills",
+      onClick: () => handleLinkClick.bind(this, "skills"),
+    },
+    {
+      title: "Education",
+      state: isSectionFocus === "education",
+      href: "#education",
+      onClick: () => handleLinkClick.bind(this, "education"),
+    },
+    {
+      title: "Contact",
+      state: isSectionFocus === "contact",
+      href: "#contact",
+      onClick: () => handleLinkClick.bind(this, "contact"),
+    },
+  ];
+
   return (
     <>
       <motion.section className="nav-container" id="home">
         <motion.header className="nav-container__inner flex items-center flex-wrap px-1 py-2 text-white">
-          <NavLink
-            title="Home"
-            state={isSectionFocus === "home"}
-            href="#home"
-            onClick={handleLinkClick.bind(this, "home")}
-          />
-          <NavLink
-            title="About"
-            state={isSectionFocus === "about"}
-            href="#about"
-            onClick={handleLinkClick.bind(this, "about")}
-          />
-          <NavLink
-            title="Projects"
-            state={isSectionFocus === "projects"}
-            href="#projects"
-            onClick={handleLinkClick.bind(this, "projects")}
-          />
-          <NavLink
-            title="Skills"
-            state={isSectionFocus === "skills"}
-            href="#skills"
-            onClick={handleLinkClick.bind(this, "skills")}
-          />
-          <NavLink
-            title="Education"
-            state={isSectionFocus === "education"}
-            href="#education"
-            onClick={handleLinkClick.bind(this, "education")}
-          />
-          <NavLink
-            title="Contact"
-            state={isSectionFocus === "contact"}
-            href="#contact"
-            onClick={handleLinkClick.bind(this, "contact")}
-          />
+          {navLink.length > 0 &&
+            navLink.map((link: INavigation, index: any) => (
+              <NavLink
+                key={index}
+                title={link.title}
+                state={link.state}
+                href={link.href}
+                onClick={link.onClick}
+              />
+            ))}
         </motion.header>
       </motion.section>
       {/* <NavSmallScreen /> */}
