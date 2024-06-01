@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import RootLayout from "../layout";
 import Link from "next/link";
@@ -13,6 +12,7 @@ import PROFILE from "@/app/assets/image/profile.jpeg";
 import WEB_DEV_REQUEST_SHOWCASE from "@/app/assets/image/request-web-d.png";
 import WEB_DEV_COMMUNICATEE_SHOWCASE from "@/app/assets/image/web-development.png";
 import WEB_DEV_ELITE_SHOWCASE from "@/app/assets/image/elite.png";
+import WEB_DEV_HELP_CONNECT_SHOWCASE from "@/app/assets/image/help-connect.png"
 
 import { BiRightArrowAlt, BiLogoFigma } from "react-icons/bi";
 import { HiDocumentDownload } from "react-icons/hi";
@@ -24,6 +24,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FiMoreVertical } from "react-icons/fi";
 
 import { motion, useScroll, scroll } from "framer-motion";
+
 import { Navigation } from "../navigation-section/Navigation";
 import { NavLink } from "../components/NavLink";
 import { HeroSection } from "../hero-section/HeroSection";
@@ -44,6 +45,7 @@ export {
   WEB_DEV_COMMUNICATEE_SHOWCASE,
   WEB_DEV_REQUEST_SHOWCASE,
   WEB_DEV_ELITE_SHOWCASE,
+  WEB_DEV_HELP_CONNECT_SHOWCASE
 };
 export {
   React,

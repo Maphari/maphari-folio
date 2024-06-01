@@ -2,7 +2,6 @@ import { React, motion, transition } from "@/app/imports/Imports";
 
 
 const skills: string[] = [
-  "Python",
   "C++",
   "Java",
   "Typescript",

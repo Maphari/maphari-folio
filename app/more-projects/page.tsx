@@ -8,6 +8,7 @@ import {
   WEB_DEV_COMMUNICATEE_SHOWCASE,
   WEB_DEV_REQUEST_SHOWCASE,
   WEB_DEV_ELITE_SHOWCASE,
+  WEB_DEV_HELP_CONNECT_SHOWCASE,
   motion,
   Footer,
 } from "../imports/Imports";
@@ -20,6 +21,13 @@ interface IProjectCardMore {
 }
 
 const projectData: IProjectCardMore[] = [
+  {
+    ImageURL: WEB_DEV_HELP_CONNECT_SHOWCASE.src,
+    header: "Help Connect Web App",
+    explanation:
+      "This web app called help connect was build to help lecturers to connect easy with students so that students can get all the assistance with one click.",
+    href: "https://github.com/Maphari/Help-connect.com",
+  },
   {
     ImageURL: WEB_DEV_COMMUNICATEE_SHOWCASE.src,
     header: "Communicatee Web App",
